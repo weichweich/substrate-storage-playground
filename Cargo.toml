@@ -1,0 +1,19 @@
+[package]
+authors = ["weichweich <14820950+weichweich@users.noreply.github.com>"]
+edition = "2018"
+name = "substorage"
+version = "0.1.0"
+
+[dependencies]
+hex = "0.4.2"
+
+frame-support = {git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.8"}
+frame-system = {git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.8"}
+pallet-balances = {git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.8"}
+
+[features]
+default = ["std"]
+std = [
+  "frame-support/std",
+  "frame-system/std",
+]

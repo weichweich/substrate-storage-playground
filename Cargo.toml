@@ -6,10 +6,14 @@ version = "0.1.0"
 
 [dependencies]
 hex = "0.4.2"
+hex-literal = "0.2.1"
 
-frame-support = {git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.8"}
-frame-system = {git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.8"}
-pallet-balances = {git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.8"}
+codec = {package = "parity-scale-codec", version = "2.0.0"}
+sc-network = {git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.9"}
+frame-support = {git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.9"}
+frame-system = {git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.9"}
+pallet-balances = {git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.9"}
+sp-core = {git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.9"}
 
 [features]
 default = ["std"]
